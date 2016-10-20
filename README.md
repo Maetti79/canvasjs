@@ -5,6 +5,8 @@ server needs to be https via nginx ssh proxy
 
 Demo: https://purepix.net/canvas/
 
+Use two clients to try an VideoChat
+
 Works in ...
 Android  OK, Fast
 Chrome   OK, Fast
