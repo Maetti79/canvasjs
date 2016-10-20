@@ -62,6 +62,18 @@ if (typeof Array.prototype.retrieveObj == 'undefined') {
     }
 }
 
+if (typeof Array.prototype.retrieveObjIdRef == 'undefined') {
+    Array.prototype.retrieveObjIdRef = function(id) {
+        var obj = null;
+        for (var i = 0; i < this.length; i++) {
+            if (this[i].idref === id) {
+                obj = this[i];
+            }
+        }
+        return obj;
+    }
+}
+
 if (typeof Array.prototype.clear == 'undefined') {
     Array.prototype.clear = function() {
         while (this.length > 0) {
